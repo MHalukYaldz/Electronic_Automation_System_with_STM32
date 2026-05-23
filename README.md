@@ -3,11 +3,13 @@
 A modular STM32-based electronic automation system designed for environmental data acquisition, actuator control, Modbus RTU/RS-485 communication, GSM/SMS notification, and multi-board PCB implementation.
 
 
+
 ## Project Overview
 
 This project is a modular embedded automation system based on STM32F103 microcontrollers. The system is designed to acquire environmental data from sensors, transfer the measured values between boards using Modbus RTU over RS-485, make threshold-based decisions, control physical actuators, and notify the user through GSM/SMS when required.
 
 The system consists of three main boards: Sensor Board, Control Board, and Server/Gateway Board. Each board has a dedicated function in the overall architecture, making the system easier to test, debug, and expand.
+
 
 
 ## System Architecture
@@ -21,11 +23,13 @@ The system is structured as a distributed multi-board architecture:
 Data flow is mainly organized through Modbus register-based communication. Sensor data is transferred from the Sensor Board to the Server/Gateway Board, while control commands are sent from the Server/Gateway Board to the Control Board.
 
 
+
 ## Hardware Design
 
 The hardware design was developed as a PCB-based modular system. The boards were designed by considering power distribution, microcontroller support circuitry, sensor/actuator interfaces, communication interfaces, and test/debug points.
 
 The system operates from a 12 V input supply. Required voltage levels such as 5 V, 3.3 V, and the GSM module supply voltage are generated on the related boards using regulator and converter stages.
+
 
 
 ## Sensor Board
@@ -42,6 +46,7 @@ Used sensors:
 The acquired sensor values are processed by the STM32 microcontroller and mapped into Modbus registers so that they can be read by the Server/Gateway Board.
 
 
+
 ## Control Board
 
 The Control Board is responsible for driving the physical output elements of the system. It receives control information from the Server/Gateway Board through Modbus RTU over RS-485 and activates the related output stages.
@@ -54,6 +59,7 @@ Controlled outputs include:
 - Optional external switching interface
 
 MOSFET-based driver circuits are used for load control. In addition, an optional BJT-based output is provided to support external switching elements such as a relay or contactor when required.
+
 
 
 ## Server / Gateway Board
@@ -70,11 +76,13 @@ The board includes:
 The GSM supply stage is separated from the main logic supply to improve system stability during GSM current bursts.
 
 
+
 ## Modbus RTU / RS-485 Communication
 
 Inter-board communication is implemented using Modbus RTU over the RS-485 physical layer. RS-485 was selected due to its differential signaling structure and suitability for industrial environments.
 
 The Modbus register map is used to organize sensor values, alarm states, and control commands in a structured way. CRC verification is considered in the Modbus RTU frame structure to improve communication reliability.
+
 
 
 ## Embedded Software
@@ -91,11 +99,13 @@ Main software functions include:
 - GSM/SMS notification
 
 
+
 ## PCB Design
 
 The project was designed at PCB level instead of remaining only as a software prototype. PCB design decisions were made by considering power paths, regulator placement, decoupling capacitors, communication lines, connector placement, and test/debug accessibility.
 
 The modular PCB approach separates sensing, control, and gateway functions into different boards. This makes the system easier to debug, maintain, and expand.
+
 
 
 ## Test Results
@@ -109,6 +119,7 @@ Several functional tests were performed to verify the system operation:
 - Modbus RTU holding register reading test
 
 The test results show that sensor data can be transferred through the Modbus register structure and that actuator control scenarios can be executed according to the system logic.
+
 
 
 ## Project Images
@@ -138,6 +149,7 @@ The test results show that sensor data can be transferred through the Modbus reg
 *Figure: 3D PCB view of the Server/Gateway Board used for RS-485 communication and GSM/SMS notification.*
 
 
+
 ## Technologies Used
 
 - STM32F103
@@ -153,9 +165,11 @@ The test results show that sensor data can be transferred through the Modbus reg
 - LM35, MQ-2, ADXL345, BMP180 sensors
 
 
+
 ## Documentation Note
 
 Detailed schematic files and the full thesis document are not publicly included in this repository. This repository focuses on the project overview, system architecture, PCB-level design approach, embedded software structure, 3D board visuals, and test results.
+
 
 
 ## Conclusion
