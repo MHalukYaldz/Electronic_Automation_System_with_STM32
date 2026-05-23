@@ -101,3 +101,21 @@ Several functional tests were performed to verify the system operation:
 
 The test results show that sensor data can be transferred through the Modbus register structure and that actuator control scenarios can be executed according to the system logic.
 
+
+## Project Images
+
+### System Block Diagram
+
+<img width="654" height="1151" alt="Blok_diyagram" src="https://github.com/user-attachments/assets/647c9d08-a885-4ec9-92dd-85ced1fafb40" />
+
+### Sensor Board 3D View
+
+<img width="911" height="816" alt="Sensor" src="https://github.com/user-attachments/assets/ec5ad27a-0b93-4775-95e6-4f34edbbbcb9" />
+
+### Control Board 3D View
+
+<img width="871" height="830" alt="Control" src="https://github.com/user-attachments/assets/bbea6334-c762-4628-9201-bce5e51b4ad2" />
+
+### Server/Gateway Board 3D View
+
+<img width="![Uploading Blok_diyagram.png…]()780" height="746" alt="Gateway" src="https://github.com/user-attachments/assets/cbe8a62d-b1d1-4a07-a70f-0c5cde2a84ac" />
