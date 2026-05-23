@@ -116,21 +116,25 @@ The test results show that sensor data can be transferred through the Modbus reg
 ### System Block Diagram
 
 <img width="654" height="1151" alt="Blok_diyagram" src="https://github.com/user-attachments/assets/647c9d08-a885-4ec9-92dd-85ced1fafb40" />
+
 *Figure: Overall system block diagram showing the communication flow between Sensor Board, Server/Gateway Board, and Control Board.*
 
 ### Sensor Board 3D View
 
 <img width="911" height="816" alt="Sensor" src="https://github.com/user-attachments/assets/ec5ad27a-0b93-4775-95e6-4f34edbbbcb9" />
+
 *Figure: 3D PCB view of the Sensor Board used for environmental data acquisition.*
 
 ### Control Board 3D View
 
 <img width="871" height="830" alt="Control" src="https://github.com/user-attachments/assets/bbea6334-c762-4628-9201-bce5e51b4ad2" />
+
 *Figure: 3D PCB view of the Control Board used for actuator and load driving.*
 
 ### Server/Gateway Board 3D View
 
 <img width="![Uploading Blok_diyagram.png…]()780" height="746" alt="Gateway" src="https://github.com/user-attachments/assets/cbe8a62d-b1d1-4a07-a70f-0c5cde2a84ac" />
+
 *Figure: 3D PCB view of the Server/Gateway Board used for RS-485 communication and GSM/SMS notification.*
 
 
